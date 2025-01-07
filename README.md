@@ -1,1 +1,3 @@
-# templates
+# Templates
+
+Unraid templates in `unraid/`

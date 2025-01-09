@@ -4,22 +4,24 @@
   <Repository>fosrl/newt</Repository>
   <Registry>https://hub.docker.com/r/fosrl/newt</Registry>
   <Network>bridge</Network>
+  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/newt/issues</Support>
   <Project>https://fossorial.io</Project>
-  <Overview>Newt (https://github.com/fosrl/newt) is a user space tunnel client for the Pangolin (https://github.com/fosrl/pangolin) tunneled reverse proxy server. Newt is the entry point that allows you to safely expose your Unraid services to the internet through a reverse proxy tunnel!</Overview>
-  <Category>Security: Tools:</Category>
+  <Overview>Newt (https://github.com/fosrl/newt) is a user space tunnel client for the Pangolin (https://github.com/fosrl/pangolin) tunneled reverse proxy server. Newt is the entry point that allows you to safely expose your Unraid services to the internet through a reverse proxy tunnel!&#xD;
+</Overview>
+  <Category>Security: Tools: Network:Web Network:Proxy Network:VPN Network:Privacy</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/fosrl/pangolin/refs/heads/main/public/logo/pangolin_orange_512x512.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1736397253</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="PANGOLIN_ENDPOINT" Target="PANGOLIN_ENDPOINT" Default="" Mode="" Description="This is the full URL of the Pangolin instance. Example: https://proxy.example.com" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="NEWT_ID" Target="NEWT_ID" Default="" Mode="" Description="This is the unique ID of the Newt site. Example: 31frd0uzbjvp721" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="NEWT_SECRET" Target="NEWT_SECRET" Default="" Mode="" Description="This is the secret key of the Newt site. Example: h51mmlknrvrwv8s4r1i210azhumt6isgbpyavxodibx1k2d6" Type="Variable" Display="always" Required="false" Mask="true"/>

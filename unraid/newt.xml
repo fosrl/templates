@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/newt/issues</Support>
   <Project>https://fossorial.io</Project>
-  <Overview>Newt (https://github.com/fosrl/newt) is a user space tunnel client for the Pangolin (https://github.com/fosrl/pangolin) tunneled reverse proxy server. Newt is the entry point that allows you to safely expose your Unraid services to the internet through a reverse proxy tunnel.</Overview>
+  <Overview>Newt (https://github.com/fosrl/newt) is a user space tunnel client for the Pangolin (https://github.com/fosrl/pangolin) tunneled reverse proxy server. Newt is the entry point that allows you to safely expose your Unraid services to the internet through a reverse proxy tunnel!</Overview>
   <Category>Security: Tools:</Category>
   <WebUI/>
   <TemplateURL/>

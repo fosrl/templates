@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pangolin</Name>
+  <Repository>fosrl/pangolin</Repository>
+  <Registry>https://hub.docker.com/r/fosrl/pangolin</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/fosrl/pangolin/issues</Support>
+  <Project>https://fossorial.io</Project>
+  <Overview>Pangolin (https://github.com/fosrl/pangolin) is a tunneled reverse proxy server and dashboard UI with identity and access control built in. Pangolin can optionally be used in Local mode as a normal reverse proxy for users who don't want/need tunnels, but still want to take advantage of its excellent authentication features.&#xD;
+&#xD;
+Chat with us on Discord!&#xD;
+&#xD;
+https://discord.gg/HCJR8Xhme4</Overview>
+  <Category>Security: Tools: Network:Web Network:Proxy Network:Management Network:VPN Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:3002]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/fosrl/pangolin/refs/heads/main/public/logo/pangolin_orange_512x512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1736998906</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Dashboard URL" Target="APP_DASHBOARDURL" Default="" Mode="" Description="This the external URL by which you will access the Pangolin dashboard for management and authentication" Type="Variable" Display="always" Required="false" Mask="false">https://pangolin.example.com</Config>
+  <Config Name="Base Domain" Target="APP_BASEDOMAIN" Default="" Mode="" Description="This is the base domain to be used as the root of all subdomains" Type="Variable" Display="always" Required="false" Mask="false">example.com</Config>
+  <Config Name="Gerbil Base Endpoint" Target="GERBIL_BASEENDPOINT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pangolin.example.com</Config>
+  <Config Name="Server Admin Email" Target="USERS_SERVERADMIN_EMAIL" Default="" Mode="" Description="This user will be considered the server admin" Type="Variable" Display="always" Required="false" Mask="false">admin@example.com</Config>
+  <Config Name="Server Admin Password" Target="USERS_SERVERADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">Password123!</Config>
+  <Config Name="Generate Traefik Config" Target="GENERATE_TRAEFIK_CONFIG" Default="" Mode="" Description="This will generate basic Traefik config files for use with Pangolin at /traefik. This will overwrite any manual changes you make to the files. WARNING: Disable this if you make any manual edits to the Pangolin Traefik config files" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Host Port 1" Target="3002" Default="" Mode="tcp" Description="NOTE: If you change this, the container port and SERVER_NEXTPORT must match" Type="Port" Display="always" Required="false" Mask="false">3002</Config>
+  <Config Name="Host Port 2" Target="3000" Default="" Mode="tcp" Description="NOTE: If you change this, the container port and SERVER_NEXTPORT must match" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Host Port 3" Target="3001" Default="" Mode="tcp" Description="NOTE: IF you change this, the container port and SERVER_INTERNALPORT must match" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="Gerbil WireGuard Port" Target="GERBIL_STARTPORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">51822</Config>
+</Container>

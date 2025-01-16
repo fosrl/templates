@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gerbil</Name>
+  <Repository>fosrl/gerbil</Repository>
+  <Registry>https://hub.docker.com/r/fosrl/gerbil</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/fosrl/gerbil/issues</Support>
+  <Project>https://fossorial.io</Project>
+  <Overview>Gerbil (https://github.com/fosrl/gerbil) is a simple WireGuard interface management server written in Go. Gerbil makes it easy to create WireGuard interfaces as well as add and remove peers with an HTTP API. Gerbil is meant to enable the tunneling functionality of Pangolin (https://github.com/fosrl/pangolin), the tunneled reverse proxy server and dashboard UI with identity and access control.&#xD;
+&#xD;
+Chat with us on Discord!&#xD;
+&#xD;
+https://discord.gg/HCJR8Xhme4</Overview>
+  <Category>Security: Tools: Other: Network:Web Network:Proxy Network:VPN Network:Privacy Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/fosrl/pangolin/refs/heads/main/public/logo/pangolin_orange_512x512.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --cap-add=SYS_MODULE</ExtraParams>
+  <PostArgs>--generateAndSaveKeyTo=/var/config/key</PostArgs>
+  <CPUset/>
+  <DateInstalled>1736998830</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/var/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Reachable At" Target="REACHABLE_AT" Default="" Mode="" Description="How should the remote server reach Gerbil's API?" Type="Variable" Display="always" Required="false" Mask="false">http://gerbil:3003</Config>
+  <Config Name="Remote Config" Target="REMOTE_CONFIG" Default="" Mode="" Description="Remote config location to HTTP get the JSON based config from." Type="Variable" Display="always" Required="false" Mask="false">http://pangolin:3001/api/v1/gerbil/get-config</Config>
+  <Config Name="Report Bandwidth To" Target="REPORT_BANDWIDTH_TO" Default="" Mode="" Description="Remote HTTP endpoint to send peer bandwidth data." Type="Variable" Display="always" Required="false" Mask="false">http://pangolin:3001/api/v1/gerbil/receive-bandwidth</Config>
+  <Config Name="WireGuard Port" Target="51822" Default="" Mode="udp" Description="Port the WireGuard server will listen on" Type="Port" Display="always" Required="false" Mask="false">51822</Config>
+  <Config Name="HTTPS Port" Target="443" Default="" Mode="tcp" Description="Pass through port Traefik will listen on for https traffic" Type="Port" Display="always" Required="false" Mask="false">44301</Config>
+  <Config Name="HTTP Port" Target="80" Default="" Mode="tcp" Description="Pass through port Traefik will listen on for http traffic" Type="Port" Display="always" Required="false" Mask="false">8001</Config>

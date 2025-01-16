@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Traefik</Name>
+  <Repository>traefik:latest</Repository>
+  <Registry>https://hub.docker.com/_/traefik</Registry>
+  <Network>none</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://traefik.io/</Project>
+  <Overview>This Traefik template is designed to simplify the Pangolin (https://github.com/fosrl/pangolin) setup process for Fossorial apps.&#xD;
+&#xD;
+Chat with us on Discord!&#xD;
+&#xD;
+https://discord.gg/HCJR8Xhme4&#xD;
+&#xD;
+To route Traefik through Gerbil:&#xD;
+&#xD;
+--net=container:Gerbil</Overview>
+  <Category>Productivity: Security: Tools:Utilities Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/icons/traefik.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--configFile=/etc/traefik/traefik_config.yml</PostArgs>
+  <CPUset/>
+  <DateInstalled>1736999419</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Folder" Target="/etc/traefik" Default="/mnt/user/appdata/traefik" Mode="rw" Description="Appdata Location" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="https Port" Target="443" Default="44301" Mode="tcp" Description="HTTPS Port" Type="Port" Display="always" Required="false" Mask="false">44301</Config>
+  <Config Name="http Port" Target="80" Default="8001" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Web UI Port" Target="8080" Default="8183" Mode="tcp" Description="Dashboard WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8183</Config>
+  <Config Name="Enable Traefik (Dashboard)" Target="traefik.enable" Default="true" Mode="" Description="Enable/Disable Traefik Dashboard" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Host Path 2" Target="/letsencrypt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+</Container>

@@ -32,3 +32,4 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <Config Name="WireGuard Port" Target="51822" Default="" Mode="udp" Description="Port the WireGuard server will listen on" Type="Port" Display="always" Required="false" Mask="false">51822</Config>
   <Config Name="HTTPS Port" Target="443" Default="" Mode="tcp" Description="Pass through port Traefik will listen on for https traffic" Type="Port" Display="always" Required="false" Mask="false">44301</Config>
   <Config Name="HTTP Port" Target="80" Default="" Mode="tcp" Description="Pass through port Traefik will listen on for http traffic" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+</Container>

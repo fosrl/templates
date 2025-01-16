@@ -34,5 +34,5 @@ To route Traefik through Gerbil:&#xD;
   <Config Name="http Port" Target="80" Default="8001" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
   <Config Name="Web UI Port" Target="8080" Default="8183" Mode="tcp" Description="Dashboard WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8183</Config>
   <Config Name="Enable Traefik (Dashboard)" Target="traefik.enable" Default="true" Mode="" Description="Enable/Disable Traefik Dashboard" Type="Label" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="Host Path 2" Target="/letsencrypt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Lets Encrypt Certs" Target="/letsencrypt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
 </Container>

@@ -33,7 +33,7 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <Config Name="Server Admin Password" Target="USERS_SERVERADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">Password123!</Config>
   <Config Name="Generate Traefik Config" Target="GENERATE_TRAEFIK_CONFIG" Default="" Mode="" Description="This will generate basic Traefik config files for use with Pangolin at /traefik. This will overwrite any manual changes you make to the files. WARNING: Disable this if you make any manual edits to the Pangolin Traefik config files" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Host Port 1" Target="3002" Default="" Mode="tcp" Description="NOTE: If you change this, the container port and SERVER_NEXTPORT must match" Type="Port" Display="always" Required="false" Mask="false">3002</Config>
-  <Config Name="Host Port 2" Target="3000" Default="" Mode="tcp" Description="NOTE: If you change this, the container port and SERVER_NEXTPORT must match" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Host Port 2" Target="3000" Default="" Mode="tcp" Description="NOTE: If you change this, the container port and SERVER_EXTERNALPORT must match" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Host Port 3" Target="3001" Default="" Mode="tcp" Description="NOTE: IF you change this, the container port and SERVER_INTERNALPORT must match" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="Gerbil WireGuard Port" Target="GERBIL_STARTPORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">51822</Config>
 </Container>

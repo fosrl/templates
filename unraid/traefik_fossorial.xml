@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Traefik</Name>
+  <Name>Traefik (Fossorial)</Name>
   <Repository>traefik:latest</Repository>
   <Registry>https://hub.docker.com/_/traefik</Registry>
   <Network>none</Network>

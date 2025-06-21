@@ -28,4 +28,6 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <Config Name="PANGOLIN_ENDPOINT" Target="PANGOLIN_ENDPOINT" Default="" Mode="" Description="This is the full URL of the Pangolin instance. Example: https://proxy.example.com" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="NEWT_ID" Target="NEWT_ID" Default="" Mode="" Description="This is the unique ID of the Newt site. Example: 31frd0uzbjvp721" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="NEWT_SECRET" Target="NEWT_SECRET" Default="" Mode="" Description="This is the secret key of the Newt site. Example: h51mmlknrvrwv8s4r1i210azhumt6isgbpyavxodibx1k2d6" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Docker Socket Path" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="DOCKER_SOCKET" Target="DOCKER_SOCKET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
 </Container>

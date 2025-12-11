@@ -8,8 +8,8 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/gerbil/issues</Support>
-  <Project>https://fossorial.io</Project>
-  <Overview>Gerbil (https://github.com/fosrl/gerbil) is a simple WireGuard interface management server written in Go. Gerbil makes it easy to create WireGuard interfaces as well as add and remove peers with an HTTP API. Gerbil is meant to enable the tunneling functionality of Pangolin (https://github.com/fosrl/pangolin), the tunneled reverse proxy server and dashboard UI with identity and access control.&#xD;
+  <Project>https://pangolin.net</Project>
+  <Overview>Gerbil (https://github.com/fosrl/gerbil) is a simple WireGuard interface management server written in Go. Gerbil makes it easy to create WireGuard interfaces as well as add and remove peers with an HTTP API. Gerbil is meant to enable the tunneling functionality of Pangolin (https://github.com/fosrl/pangolin).&#xD;
 &#xD;
 Chat with us on Discord!&#xD;
 &#xD;

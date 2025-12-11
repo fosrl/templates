@@ -8,8 +8,8 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/pangolin/issues</Support>
-  <Project>https://fossorial.io</Project>
-  <Overview>Pangolin (https://github.com/fosrl/pangolin) is a tunneled reverse proxy server and dashboard UI with identity and access control built in. Pangolin can optionally be used in Local mode as a normal reverse proxy for users who don't want/need tunnels, but still want to take advantage of its excellent authentication features.&#xD;
+  <Project>https://pangolin.net</Project>
+  <Overview>Pangolin (https://github.com/fosrl/pangolin) is the identity-aware remote access platform. Pangolin can behave like a reverse proxy or zero-trust VPN.&#xD;
 &#xD;
 Chat with us on Discord!&#xD;
 &#xD;

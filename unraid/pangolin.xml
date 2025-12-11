@@ -26,8 +26,6 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <DonateLink/>
   <Requires/>
   <Config Name="Config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Server Admin Email" Target="USERS_SERVERADMIN_EMAIL" Default="" Mode="" Description="This will override anything in the config file." Type="Variable" Display="always" Required="false" Mask="false">admin@example.com</Config>
-  <Config Name="Server Admin Password" Target="USERS_SERVERADMIN_PASSWORD" Default="" Mode="" Description="This will override anything in the config file." Type="Variable" Display="always" Required="false" Mask="true">Password123!</Config>
   <Config Name="WebUI Port" Target="3002" Default="" Mode="tcp" Description="This port must match server.next_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3002</Config>
   <Config Name="External API Port" Target="3000" Default="" Mode="tcp" Description="This port must match server.external_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Internal API Port" Target="3001" Default="" Mode="tcp" Description="This port must match server.internal_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3001</Config>

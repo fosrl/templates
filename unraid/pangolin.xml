@@ -9,11 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/pangolin/issues</Support>
   <Project>https://pangolin.net</Project>
-  <Overview>Pangolin (https://github.com/fosrl/pangolin) is the identity-aware remote access platform. Pangolin can behave like a reverse proxy or zero-trust VPN.&#xD;
+  <Overview>Pangolin (https://github.com/fosrl/pangolin) is the identity-aware remote access platform. It's an authenticated reverse proxy and a zero-trust VPN.&#xD;
 &#xD;
 Chat with us on Discord!&#xD;
 &#xD;
-https://discord.gg/HCJR8Xhme4</Overview>
+https://pangolin.net/discord</Overview>
   <Category>Security: Tools: Network:Web Network:Proxy Network:Management Network:VPN Network:Other</Category>
   <WebUI>http://[IP]:[PORT:3002]</WebUI>
   <TemplateURL/>
@@ -26,7 +26,9 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <DonateLink/>
   <Requires/>
   <Config Name="Config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="WebUI Port" Target="3002" Default="" Mode="tcp" Description="This port must match server.next_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3002</Config>
-  <Config Name="External API Port" Target="3000" Default="" Mode="tcp" Description="This port must match server.external_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="Internal API Port" Target="3001" Default="" Mode="tcp" Description="This port must match server.internal_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="Dashboard API Port" Target="3000" Default="" Mode="tcp" Description="Dashboard API server port for the frontend dashboard." Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Internal API Port" Target="3001" Default="" Mode="tcp" Description="Internal API server port for internal network communication." Type="Port" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="WebUI Port" Target="3002" Default="" Mode="tcp" Description="Dashboard Web UI server port for the frontend dashboard." Type="Port" Display="always" Required="false" Mask="false">3002</Config>
+  <Config Name="Integration API Port" Target="3003" Default="" Mode="tcp" Description="Integration API server port for external service integrations." Type="Port" Display="always" Required="false" Mask="false">3003</Config>
+  <Config Name="AI Gateway Port" Target="3005" Default="" Mode="tcp" Description="AI gateway server port for AI-powered features." Type="Port" Display="always" Required="false" Mask="false">3005</Config>
 </Container>

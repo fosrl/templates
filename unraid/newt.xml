@@ -9,11 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/fosrl/newt/issues</Support>
   <Project>https://pangolin.net</Project>
-  <Overview>Newt (https://github.com/fosrl/newt) is the tunneled site and network connector for Pangolin (https://github.com/fosrl/pangolin), the identity-based remote access platform.&#xD;
+  <Overview>Newt (https://github.com/fosrl/newt) is the lightweight site connector for Pangolin (https://github.com/fosrl/pangolin). It tunnels through firewalls creating an entrypoint into any network.&#xD;
 &#xD;
 Chat with us on Discord!&#xD;
 &#xD;
-https://discord.gg/HCJR8Xhme4</Overview>
+https://pangolin.net/discord</Overview>
   <Category>Security: Tools: Network:Web Network:Proxy Network:VPN Network:Privacy</Category>
   <WebUI/>
   <TemplateURL/>
@@ -25,9 +25,9 @@ https://discord.gg/HCJR8Xhme4</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="PANGOLIN_ENDPOINT" Target="PANGOLIN_ENDPOINT" Default="" Mode="" Description="This is the full URL of the Pangolin instance. Example: https://proxy.example.com" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="NEWT_ID" Target="NEWT_ID" Default="" Mode="" Description="This is the unique ID of the Newt site. Example: 31frd0uzbjvp721" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="NEWT_SECRET" Target="NEWT_SECRET" Default="" Mode="" Description="This is the secret key of the Newt site. Example: h51mmlknrvrwv8s4r1i210azhumt6isgbpyavxodibx1k2d6" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="PANGOLIN_ENDPOINT" Target="PANGOLIN_ENDPOINT" Default="" Mode="" Description="This is the full URL of the Pangolin instance. Example: https://app.pangolin.net" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NEWT_ID" Target="NEWT_ID" Default="" Mode="" Description="This is the unique ID of the site provided after generation. Example: 31frd0uzbjvp721" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NEWT_SECRET" Target="NEWT_SECRET" Default="" Mode="" Description="This is the secret key of the site after generation. Example: h51mmlknrvrwv8s4r1i210azhumt6isgbpyavxodibx1k2d6" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="Docker Socket Path" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="DOCKER_SOCKET" Target="DOCKER_SOCKET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
 </Container>

@@ -26,9 +26,9 @@ https://pangolin.net/discord</Overview>
   <DonateLink/>
   <Requires/>
   <Config Name="Config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="Dashboard API Port" Target="3000" Default="" Mode="tcp" Description="Dashboard API server port for the frontend dashboard." Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="Internal API Port" Target="3001" Default="" Mode="tcp" Description="Internal API server port for internal network communication." Type="Port" Display="always" Required="false" Mask="false">3001</Config>
-  <Config Name="WebUI Port" Target="3002" Default="" Mode="tcp" Description="Dashboard Web UI server port for the frontend dashboard." Type="Port" Display="always" Required="false" Mask="false">3002</Config>
-  <Config Name="Integration API Port" Target="3003" Default="" Mode="tcp" Description="Integration API server port for external service integrations." Type="Port" Display="always" Required="false" Mask="false">3003</Config>
-  <Config Name="AI Gateway Port" Target="3005" Default="" Mode="tcp" Description="AI gateway server port for AI-powered features." Type="Port" Display="always" Required="false" Mask="false">3005</Config>
+  <Config Name="External API Port" Target="3000" Default="" Mode="tcp" Description="This port must match server.external_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Internal API Port" Target="3001" Default="" Mode="tcp" Description="This port must match server.internal_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="WebUI Port" Target="3002" Default="" Mode="tcp" Description="This port must match server.next_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3002</Config>
+  <Config Name="Integration API Port" Target="3003" Default="" Mode="tcp" Description="This port must match server.integration_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3003</Config>
+  <Config Name="AI Gateway Port" Target="3005" Default="" Mode="tcp" Description="This port must match server.ai_gateway_port in the config file." Type="Port" Display="always" Required="false" Mask="false">3005</Config>
 </Container>

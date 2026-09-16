@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pangolin Site</Name>
+  <Repository>fosrl/pangolin-cli</Repository>
+  <Registry>https://hub.docker.com/r/fosrl/cli</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/fosrl/cli/issues</Support>
+  <Project>https://pangolin.net</Project>
+  <ReadMe/>
+  <Overview>Pangolin Site acts as a tunneled gateway for your local network, enabling seamless zero-trust remote access through the Pangolin (https://github.com/fosrl/pangolin) platform. It securely routes traffic to your Unraid services without complex port forwarding or exposure to the public internet.&#13;
+&#13;
+Chat with us on Discord!&#13;
+&#13;
+https://pangolin.net/discord</Overview>
+  <Category>Security: Tools: Network:Web Network:Proxy Network:VPN</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/fosrl/pangolin/refs/heads/main/public/logo/pangolin_orange_512x512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1789506416</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="PANGOLIN_ENDPOINT" Target="PANGOLIN_ENDPOINT" Default="" Mode="" Description="This is the full URL of the Pangolin instance. Example: https://app.pangolin.net" Type="Variable" Display="always" Required="true" Mask="false">https://app.pangolin.net</Config>
+  <Config Name="SITE_ID" Target="SITE_ID" Default="" Mode="" Description="This is the unique ID of the Pangolin Site. Example: 31frd0uzbjvp721" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SITE_SECRET" Target="SITE_SECRET" Default="" Mode="" Description="This is the secret key of the Pangolin Site. Example: h51mmlknrvrwv8s4r1i210azhumt6isgbpyavxodibx1k2d6" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="DOCKER_SOCKET" Target="DOCKER_SOCKET" Default="" Mode="" Description="Set the Docker socket container path for container discovery integration." Type="Variable" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Docker Socket Path" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Mount the Docker socket for container discovery integration." Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+</Container>
